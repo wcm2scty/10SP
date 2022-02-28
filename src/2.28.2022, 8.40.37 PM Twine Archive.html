@@ -1,0 +1,403 @@
+<tw-storydata name="10SP - Spacebar" startnode="1" creator="Twine" creator-version="2.3.16" ifid="5BA38A55-8EFC-42E9-9D66-53BD3E3AFF10" zoom="1" format="SugarCube" format-version="2.36.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body { background-color: black; }
+
+button {
+  color: #fff;
+  cursor: pointer;
+  background-color: tomato;
+  border: 1px solid #fff;
+}
+
+button:disabled {
+    background-color: #444;
+    border: 1px solid #666;
+}
+
+summary {
+  color: #fff;
+  cursor: pointer;
+  background-color: tomato;
+  
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.subbuttons button {
+  cursor: pointer;
+  background-color: tomato;
+  border: 1px solid #fff;
+}
+
+.subbuttons a {
+  font-weight: bold;
+  color: #fff;
+}
+
+.mm a {
+  color: #68d;
+  cursor: pointer;
+  background-color: none;
+}
+
+.last {
+  color: Turquoise;
+  background-color: none;
+}
+
+.last a {
+  color: Turquoise;
+  background-color: none;
+}
+
+.phy {
+  color: SpringGreen;
+  background-color: none;
+}
+
+.phy a {
+  color: SpringGreen;
+  background-color: none;
+}
+
+.che {
+  color: Yellow;
+  background-color: none;
+}
+
+.che a {
+  color: Yellow;
+  background-color: none;
+}
+
+.hma {
+  color: MediumPurple;
+  background-color: none;
+}
+
+.hma a {
+  color: MediumPurple;
+  background-color: none;
+}
+
+.eng {
+  color: #DAF7A6;
+  background-color: none;
+}
+
+.eng a {
+  color: #DAF7A6;
+  background-color: none;
+}
+
+.gkn {
+  color: SandyBrown;
+  background-color: none;
+}
+
+.gkn a {
+  color: SandyBrown;
+  background-color: none;
+}
+
+.bio {
+  color: IndianRed;
+  background-color: none;
+}
+
+.bio a {
+  color: IndianRed;
+  background-color: none;
+}
+
+.inv img {
+   -webkit-filter: invert(1);
+   filter: invert(1);
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">//config.history.controls = false;</script><tw-passagedata pid="1" name="Main Menu" tags="" position="1801,302" size="100,100">&lt;&lt;set $subject = &quot;Subject Selection&quot;&gt;&gt;
+Choose subject.
+
+
+@@.subbuttons;.phy;&lt;u&gt;[[Physics]]&lt;/u&gt;@@
+
+@@.subbuttons;.che;&lt;u&gt;[[Chemistry]]&lt;/u&gt;@@
+
+@@.subbuttons;.hma;&lt;u&gt;[[H. Math]]&lt;/u&gt;@@
+
+@@.subbuttons;.bio;&lt;u&gt;[[Biology]]&lt;/u&gt;@@
+
+@@.subbuttons;.eng;&lt;u&gt;[[English]]&lt;/u&gt;@@
+
+@@.subbuttons;.gkn;&lt;u&gt;[[G. Knowledge]]&lt;/u&gt;@@</tw-passagedata><tw-passagedata pid="2" name="StoryAuthor" tags="" position="2001,23" size="100,100"></tw-passagedata><tw-passagedata pid="3" name="StoryBanner" tags="" position="1803,24" size="100,100">$subject</tw-passagedata><tw-passagedata pid="4" name="StoryCaption" tags="" position="1800,175" size="100,100">Last Added: @@.last;[[জৈব রসায়ন|HydroCarbon]]@@ &amp; @@.last;[[কোষ ও এর গঠন|CellStructure]]@@
+
+Last Completed Chapters
+&lt;span style=&quot;color:SpringGreen&quot;&gt;Physics: $phy&lt;/span&gt;
+
+&lt;span style=&quot;color:Yellow&quot;&gt;Chemistry: $che&lt;/span&gt;
+
+&lt;span style=&quot;color:MediumPurple&quot;&gt;H. Math: $hma&lt;/span&gt;
+
+&lt;span style=&quot;color:indianred&quot;&gt;Biology: $bio&lt;/span&gt;
+
+&lt;span style=&quot;color:#DAF7A6&quot;&gt;English: $eng&lt;/span&gt;
+&lt;span style=&quot;color:SandyBrown&quot;&gt;G. Knowledge: $gkn&lt;/span&gt;
+[[Main Menu]]</tw-passagedata><tw-passagedata pid="5" name="StoryInit" tags="" position="1600,25" size="100,100">&lt;&lt;set $phy = &quot;তাপগতিবিদ্যা&quot;&gt;&gt;
+&lt;&lt;set $che = &quot;মৌলের পর্যাবৃত্তিক ধর্ম ও রাসায়নিক বন্ধন&quot;&gt;&gt;
+&lt;&lt;set $hma = &quot;কনিক&quot;&gt;&gt;
+&lt;&lt;set $bio = &quot;উদ্ভিদের প্রজনন&quot;&gt;&gt;
+&lt;&lt;set $eng = &quot;See Playlist&quot;&gt;&gt;
+&lt;&lt;set $gkn = &quot;See Playlist&quot;&gt;&gt;
+&lt;&lt;set $subject = &quot;Subject Selection&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Money+" tags="" position="2200,150" size="100,100">&lt;&lt;set $cash += 50&gt;&gt;
+Money Increased</tw-passagedata><tw-passagedata pid="7" name="Physics" tags="" position="1301,500" size="100,100">@@.phy;Physics@@ class selection page. To get back to main menu click @@.mm;[[Main Menu]]@@ from the left sidebar.
+&lt;&lt;set $subject = &quot;@@.phy;Physics@@&quot;&gt;&gt;
+
+@@.phy;[[ভেক্টর|Vector]]@@
+@@.phy;[[তাপগতিবিদ্যা|Thermodynamics]]@@
+@@.phy;[[নিউটনিয়ান বলবিদ্যা|NForce]]@@
+@@.phy;[[পর্যায়বৃত্ত গতি|PeriodicMotion]]@@</tw-passagedata><tw-passagedata pid="8" name="Chemistry" tags="" position="1600,500" size="100,100">@@.che;Chemistry@@ class selection page. To get back to main menu click @@.mm;[[Main Menu]]@@ from the left sidebar.
+&lt;&lt;set $subject = &quot;@@.che;Chemistry@@&quot;&gt;&gt;
+
+@@.che;[[গুণগত রসায়ন|Gunogoto]]@@
+@@.che;[[মৌলের পর্যাবৃত্তিক ধর্ম ও রাসায়নিক বন্ধন|Periodic]]@@
+@@.che;[[রাসায়নিক পরিবর্তন|Chemical]]@@
+@@.che;[[জৈব রসায়ন|HydroCarbon]]@@</tw-passagedata><tw-passagedata pid="9" name="H. Math" tags="" position="1900,500" size="100,100">@@.hma;H. Math@@ clas selection page. To get back to main menu click @@.mm;[[Main Menu]]@@ from the left sidebar.
+&lt;&lt;set $subject = &quot;@@.hma;H. Math@@&quot;&gt;&gt;
+
+@@.hma;[[ম্যাট্রিকস ও নির্ণায়ক|Matrix]]@@
+@@.hma;[[বহুপদী ও বহুপদী সমীকরণ|Polynomials]]@@
+@@.hma;[[কনিক|Conics]]@@
+@@.hma;[[সরলরেখা|Straightline]]@@</tw-passagedata><tw-passagedata pid="10" name="Biology" tags="" position="2800,500" size="100,100">@@.bio;Biology@@ class selection page. To get back to main menu click @@.mm;[[Main Menu]]@@ from the left sidebar.
+&lt;&lt;set $subject = &quot;@@.bio;Biology@@&quot;&gt;&gt;
+
+@@.bio;[[Book PDFs|BPDFs]]@@
+@@.bio;[[Slide PDFs|SPDFs]]@@
+
+@@.bio;[[কোষ বিভাজন|CDiv]]@@
+@@.bio;[[নগ্নবীজী ও আবৃতবীজী|Angio]]@@
+@@.bio;[[টিস্যু ও টিসুতন্ত্র|Tissue]]@@
+@@.bio;[[প্পরিপাক ও শোষণ|Digestion]]@@
+@@.bio;[[জিনতত্ত্ব ও বিবর্তন|Genetics]]@@
+@@.bio;[[প্রাণীর পরিচিতি|Animal]]@@
+@@.bio;[[উদ্ভিদ শারীরতত্ত্ব|PPhy]]@@
+@@.bio;[[উদ্ভিদের প্রজনন|Reproduction]]@@
+@@.bio;[[কোষ রসায়ন|CChem]]@@
+@@.bio;[[কোষ ও এর গঠন|CellStructure]]@@</tw-passagedata><tw-passagedata pid="11" name="Vector" tags="" position="1204,651" size="100,100">Part 1: &lt;p&gt;&lt;a href=&quot;./PDFs/P_vector_1.pdf&quot; _blank&gt;Download PDF&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/1aBSVYB6-bY&quot; title=&quot;10SP&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 2: &lt;p&gt;&lt;a href=&quot;./PDFs/P_vector_2.pdf&quot; _blank&gt;Download PDF&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/Uz2OSrmkh84&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 3: No PDF
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/H2DGL5V7lto&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="12" name="Thermodynamics" tags="" position="1200,800" size="100,100">Part 1: &lt;p&gt;&lt;a href=&quot;./PDFs/P_thermo_1.pdf&quot; _blank&gt;Download PDF&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/jrokAZ_bhYc&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 2: &lt;p&gt;&lt;a href=&quot;./PDFs/P_thermo_2.pdf&quot; _blank&gt;Download PDF&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/QMdIBBXjpgI&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 3: &lt;p&gt;&lt;a href=&quot;./PDFs/P_thermo_3.pdf&quot; _blank&gt;Download PDF&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/byQ6aRru9Uk&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 4: &lt;p&gt;&lt;a href=&quot;./PDFs/P_thermo_4.pdf&quot; _blank&gt;Download PDF&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/WbrIo5saTto&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 5:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/IkDh4TfOjJc&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="13" name="Gunogoto" tags="" position="1500,650" size="100,100">Part 1: &lt;p&gt;&lt;a href=&quot;./PDFs/C_gunogoto_1.pdf&quot; _blank&gt;Download PDF&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/TVdaHay7JG0&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 2.1:
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/yS_FDwzrj_A&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 2.2:
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/DJx8TxAW95M&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 3.1:
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/KGffzCkTQyU&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 3.2:
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/Db0NuISDQso&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 4:
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/U7qpEAomBvo&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="14" name="Periodic" tags="" position="1498,803" size="100,100">Part 1: No PDF
+&lt;iframe width=&quot;541&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/5rtxDV776cU&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 2:
+&lt;iframe width=&quot;541&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/QQ6ZMDotSQo&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 3:
+&lt;iframe width=&quot;541&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/-7pCsUbIr2A&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="15" name="Matrix" tags="" position="1800,650" size="100,100">Part 1: No PDF
+&lt;iframe width=&quot;734&quot; height=&quot;413&quot; src=&quot;https://www.youtube.com/embed/rUovSxU-cPo&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 2:
+&lt;iframe width=&quot;734&quot; height=&quot;413&quot; src=&quot;https://www.youtube.com/embed/TPkfN8dxVtg&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="16" name="Polynomials" tags="" position="1800,800" size="100,100">Part 1: No PDF
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/VhFoqYlXHNk&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 2:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/yji9CQexRmg&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="17" name="Conics" tags="" position="1802,950" size="100,100">&lt;&lt;set $subject = &quot;@@.hma;H. Math@@&quot;&gt;&gt;Part 1: No PDF
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/cklnK-jpZ8U&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 2:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/PCdZ5Nq-IeI&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 3:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/WGWjuwsdHIM&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 4:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/D_0E1y1kRng&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 5:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/ZJ0HP25zQDM&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="18" name="English" tags="" position="2200,500" size="100,100">@@.eng;English@@ clas selection page. To get back to main menu click @@.mm;[[Main Menu]]@@ from the left sidebar.
+&lt;&lt;set $subject = &quot;@@.eng;English@@&quot;&gt;&gt;
+
+&lt;a href=&quot;https://www.youtube.com/playlist?list=PLwSv-teaUzyEJvBPckaCSz9fQgIj_CWDY&quot;&gt;Full Playlist&lt;/a&gt;</tw-passagedata><tw-passagedata pid="19" name="G. Knowledge" tags="" position="2500,500" size="100,100">@@.gkn;G. Knowledge@@ clas selection page. To get back to main menu click @@.mm;[[Main Menu]]@@ from the left sidebar.
+&lt;&lt;set $subject = &quot;@@.gkn;G. Knowledge@@&quot;&gt;&gt;
+
+&lt;a href=&quot;https://www.youtube.com/playlist?list=PLwSv-teaUzyFpFokTF_8zJnclH5OcBrnE&quot;&gt;Full Playlist&lt;/a&gt;
+
+</tw-passagedata><tw-passagedata pid="20" name="CDiv" tags="" position="2700,650" size="100,100">Part 1:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/iUW6nd08GjA&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="21" name="Angio" tags="" position="2700,800" size="100,100">Part 1:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/f0zP70RLHs4&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="22" name="Tissue" tags="" position="2700,950" size="100,100">Part 1:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/BKEDQxR_omk&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="23" name="Classi" tags="" position="2700,1100" size="100,100">Part 1:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/d6qKzCof8BE&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="24" name="Digestion" tags="" position="2700,1250" size="100,100">Part 1:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/KGiNoTfMJ7M&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 2:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/lrVnp3-7DUQ&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="25" name="Genetics" tags="" position="2700,1400" size="100,100">Part 1:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/uYHqyEESqqU&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="26" name="BPDFs" tags="" position="2900,650" size="100,100">All Highlighted Chapters from New Biology Book.
+
+1. রক্ত সংবহন
+	1. &lt;a href=&quot;https://drive.google.com/file/d/1mMkPNuHqHQqz30bSb7uzd0ThHPOUa4Lk/view?fbclid=IwAR0huh1WLCXBulg22Td5ARhMclIJXOE89Pk5K7w18TGqmwBk7mw4p-uTvJ&quot;&gt;Blood 1&lt;/a&gt;
+	2. &lt;a href=&quot;https://drive.google.com/file/d/1VChZRYnLuZ8fb6vDT7zIlYl-vLkCCKnO/view?fbclid=IwAR2SFvDfdYDYHaouBq_nKLR45FCbZakiUXB8Iu6iwnJuqA09xj8ys_AXEOc&quot;&gt;Blood 2&lt;/a&gt;
+	3. &lt;a href=&quot;https://drive.google.com/file/d/1tJGu8WsA7UpII5FOU-S8emj1b1SlCZC7/view?fbclid=IwAR1msKermqWobPnHaR1l2JeJrGWFygjYopy0ITYh3rT2Yr1FayqVjCVc_WI&quot;&gt;Blood 3&lt;/a&gt;
+	
+2. কোষ বিভাজন
+	1. &lt;a href=&quot;https://drive.google.com/file/d/1q40tMe5n1a04_4LHvUjb4lP_Lbuwy5hm/view?fbclid=IwAR0huh1WLCXBulg22Td5ARhMclIJXOE89Pk5K7w18TGqmwBk7mw4p-uTvJk&quot;&gt;Cell Division&lt;/a&gt;
+	
+3. জিনতত্ত্ব ও বিবর্তন
+	1. &lt;a href=&quot;https://drive.google.com/file/d/1dyxL-QL56qLVgSlfSu0Dtz0uPcOW23NP/view?fbclid=IwAR2rnXyAvpaN4p9ki8jxT1uRDsh3ralsFF6-YVniphMh5tpYnZkMSFM2tBM&quot;&gt;Genetics&lt;/a&gt;
+	
+4. নগ্নবীজী ও আবৃতবীজী
+	1. &lt;a href=&quot;https://drive.google.com/file/d/1atznpGK4or-JJB8cLNWuqPm_wctJ953t/view?fbclid=IwAR0xJGewjcoBRB4Gyc92YgnLvEoSdBzVTskzwf5-ZyMDar7ftMv-ClbK4Ww&quot;&gt;Gymnosperms &amp; Angiosperms&lt;/a&gt;
+	
+5. প্রাণীর বিভিন্নতা ও শ্রেণীবিন্যাস
+	1. &lt;a href=&quot;https://drive.google.com/file/d/1uuiKufxCtkEsqBIg9vhR2OxMZw1yiPVo/view?fbclid=IwAR0NNh3ob-qzFbMXA9YUTwIhnBpbsq5RmPMA06MGkjm3aeMKgGgvOxbQEjM&quot;&gt;Animal Diversity &amp; Classifications&lt;/a&gt;
+
+6. টিস্যু ও টিস্যুতন্ত্র
+	1. &lt;a href=&quot;https://drive.google.com/file/d/1-6aGI7IY4J-IFOC5xkoQIsyGmm-PME9T/view?fbclid=IwAR3HGcnPhR4pti4h1A6pSch1CkOK4LPEvyqKOS57JZ5axroKQJgx2gT-kYo&quot;&gt;Tissue &amp; Tissue System&lt;/a&gt;
+	
+7. পরিপাক ও শোষণ
+	1. &lt;a href=&quot;https://drive.google.com/file/d/1KEVrJWLMDz0L34hUhyIb8a_HilSS7CVg/view?fbclid=IwAR2_Pvnpnik_uShumt0ValJTeuU_VBmNddxv_46LCmqLjfrpBl3S5dpBWfY&quot;&gt;Digestion &amp; Absorption&lt;/a&gt;
+	
+8. উদ্ভিদ শারীরতত্ত্ব
+	1. &lt;a href=&quot;https://drive.google.com/file/d/1jwIkdLHrUvrsiolhri8eoKbohk-Aso_6/view&quot;&gt;Plant Physiology&lt;/a&gt;
+	
+9. উদ্ভিদের প্রজনন 
+	1. &lt;a href=&quot;https://drive.google.com/file/d/1ml4aXS11AKboSDomWUbnaALpFd0MlZsC/view&quot;&gt;Plant Reproduction&lt;/a&gt;
+	
+10. কোষ রসায়ন
+	1. &lt;a href=&quot;https://drive.google.com/file/d/1kyXAS30zsArUuyFH0Y1rRIQZOhlI-j2-/view&quot;&gt;Cellular Chemistry 1&lt;/a&gt;
+	2. &lt;a href=&quot;https://drive.google.com/file/d/1WYYx61qThW6kBjUSzrnU44KzIYyFutSp/view&quot;&gt;Cellular Chemistry 2&lt;/a&gt;
+
+11. কোষ রসায়ন
+	1. None</tw-passagedata><tw-passagedata pid="27" name="SPDFs" tags="" position="2900,800" size="100,100">&lt;&lt;set $subject = &quot;@@.bio;Biology@@&quot;&gt;&gt;All Class Slides.
+
+1. রক্ত সংবহন
+	1. &lt;a href=&quot;https://drive.google.com/file/d/1GiTCWsoXtGMIzoxRWz3g5vh2VQUj7mV7/view?fbclid=IwAR0AOqLAyKM7jlnaKnVRs5oZtVX5qvMYBoeIavGQpSIaJExLHSFrJN6If7o&quot;&gt;Blood 1&lt;/a&gt;
+	2. &lt;a href=&quot;https://drive.google.com/file/d/1JE4bvLDogZNfZs22pLKvHHDUCPfS17V7/view?fbclid=IwAR1K1QCu4NwCoxfQg3scjAqZMtirAaNG9x9lL7_gnIrwIditOJ7EWJ9q5iA&quot;&gt;Blood 2&lt;/a&gt;
+	3. &lt;a href=&quot;https://drive.google.com/file/d/1aestbNY-3LCADjzM3iu_QeXfYaP68mXl/view?fbclid=IwAR2SBac3lRFal0KiuN7ff4lcWCD4BNEMFaQUbxei9Fw90rs-7ZnRC4IzgRA&quot;&gt;Blood 3&lt;/a&gt;
+	
+2. কোষ বিভাজন
+	1. &lt;a href=&quot;https://drive.google.com/file/d/16QPZzsfLU9O4hPaCvEusruOyHwveqh64/view?fbclid=IwAR3QN99vrxaXYLkAHDP2JvT5_o15Z8yLO8R4JA_E_cgW3EHUaNwpFTlqKtk&quot;&gt;Cell Division&lt;/a&gt;
+	
+3. জিনতত্ত্ব ও বিবর্তন
+	1. &lt;a href=&quot;https://drive.google.com/file/d/1QxQsenkHKniZLMZyh2kaH0I7ijH0BqpV/view&quot;&gt;Genetics&lt;/a&gt;
+	
+4. নগ্নবীজী ও আবৃতবীজী
+	1. &lt;a href=&quot;https://drive.google.com/file/d/1d3GKiOcUQ-TETiHEIVejgQeUVJOkOiXv/view&quot;&gt;Gymnosperms &amp; Angiosperms&lt;/a&gt;
+	
+5. প্রাণীর বিভিন্নতা ও শ্রেণীবিন্যাস
+	1. &lt;a href=&quot;https://drive.google.com/file/d/19nEyfdTnL0UMnGRNFc8umNUcGV98gd_F/view&quot;&gt;Animal Diversity &amp; Classifications&lt;/a&gt;
+
+6. টিস্যু ও টিস্যুতন্ত্র
+	1. &lt;a href=&quot;https://drive.google.com/file/d/1VxrvQFyG_GvhkYRapMy7xD9f7nPykNa1/view&quot;&gt;Tissue &amp; Tissue System&lt;/a&gt;
+	
+7. পরিপাক ও শোষণ
+	1. &lt;a href=&quot;https://drive.google.com/file/d/1VvjrWRfP8uTAobYbMKccbyRV-ytG7ygD/view?fbclid=IwAR3qaFtS4GInktxN5n19kpk3JGIBM7gHcyBoIO1YWqnmPIVujJ_BzyasmEE&quot;&gt;Digestion &amp; Absorption 1&lt;/a&gt;
+	2. &lt;a href=&quot;https://drive.google.com/file/d/1-VYSgpGJq2nl4xcv4lgCZ89qT--YAK90/view?fbclid=IwAR3FSeMRSxBeCcG6dx4dTnbqG_cJUc42QeL0yKVGeghyNdsgWKBZFcKFF4I&quot;&gt;Digestion &amp; Absorption 2&lt;/a&gt;
+
+8. উদ্ভিদ শারীরতত্ত্ব
+	1. &lt;a href=&quot;https://drive.google.com/file/d/1bq8VEX4vKVuo56EcMzW6byqC6f3sAlkP/view&quot;&gt;Plant Physiology 1&lt;/a&gt;
+	2. &lt;a href=&quot;https://drive.google.com/file/d/1WHSqRogbS-_bwA4ocTNNN0LG4MeRs2F8/view&quot;&gt;Plant Physiology 2&lt;/a&gt;
+	3. &lt;a href=&quot;https://drive.google.com/file/d/1EnmNULgHyTuD1GZDHZRf_ORildoHW1LK/view&quot;&gt;Plant Physiology 3&lt;/a&gt;
+	
+9. উদ্ভিদের প্রজনন 
+	1. &lt;a href=&quot;https://drive.google.com/file/d/1i_JIZZd9Qz0C7lGYuQYczOy04NGKP_3p/view&quot;&gt;Plant Reproduction&lt;/a&gt;
+	
+10. কোষ রসায়ন 
+	1. &lt;a href=&quot;https://drive.google.com/file/d/11Ye8zbKmYFXxUa9vgE8uiHeKQwhadxcf/view&quot;&gt;Cellular Chemistry 1&lt;/a&gt;
+	2. &lt;a href=&quot;https://drive.google.com/file/d/1Hh8IdGPgLlBAYyLcUhqdEhooVosYwFtP/view&quot;&gt;Cellular Chemistry 2&lt;/a&gt;
+	
+11. কোষ রসায়ন 
+	1. &lt;a href=&quot;https://drive.google.com/file/d/15dyQrbNFJnUkF16m6L0-9w_UuzvboY7G/view&quot;&gt;Cell and it&#39;s structure 1&lt;/a&gt;
+	2. &lt;a href=&quot;https://drive.google.com/file/d/1KXYIXEE7PpTY5CyKCXHsJtnRpnOBS2wU/view&quot;&gt;Cell and it&#39;s structure 2&lt;/a&gt;
+	3. &lt;a href=&quot;https://drive.google.com/file/d/1H_av9HMfdxHImz_aABIQrhl5Fs-Qfz_U/view&quot;&gt;Cell and it&#39;s structure 3&lt;/a&gt;
+	
+12. অণুজীব
+	1. &lt;a href=&quot;#&quot;&gt;Micro oraginsm (Soon)&lt;/a&gt;</tw-passagedata><tw-passagedata pid="28" name="Animal" tags="" position="2702,1551" size="100,100">Part 0:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/Kv3naRqZgI8&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 1:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/HVDsQ9m2HL4&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 3:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/y1jyMuXyhEE&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="29" name="PPhy" tags="" position="2700,1700" size="100,100">Part 1:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/VAwVV1ZvcCQ&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 2:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/kr6gx0P7QEo&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 3:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/gs5MR8w7nq8&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="30" name="Chemical" tags="" position="1501,950" size="100,100">Part 1:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/J2z9APSA2bw&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 2:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/qERMu7kiatE&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 3:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/kmUS0ub7hjw&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 4:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/FOCm-I3vQvg&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="31" name="NForce" tags="" position="1200,950" size="100,100">Part 1:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/r-NLATfDlEc&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 2:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/k6iWs8onjMg&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 3:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/q6HpGmypnrA&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="32" name="PeriodicMotion" tags="" position="1201,1102" size="100,100">Part 1:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/ojRBLG-sybY&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="33" name="Reproduction" tags="" position="2700,1850" size="100,100">Part 1:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/Bc1pcB8mpyw&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="34" name="Straightline" tags="" position="1800,1100" size="100,100">&lt;&lt;set $subject = &quot;@@.hma;H. Math@@&quot;&gt;&gt;Part 1:
+
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/AjNqVqe3Vz4&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 2:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/A-VFy45kXvs&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 3:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/t2gs6mSC9Ns&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="35" name="CChem" tags="" position="2700,2000" size="100,100">&lt;&lt;set $subject = &quot;@@.bio;Biology@@&quot;&gt;&gt;Part 1:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/zq5kx-diGww&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 2:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/hzMWLqD5V7Q&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="36" name="HydroCarbon" tags="" position="1500,1100" size="100,100">&lt;&lt;set $subject = &quot;@@.che;Chemistry@@&quot;&gt;&gt;Part 1:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/PItbd4PfP5g&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 2:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/EYcqo6NMj6Q&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="37" name="CellStructure" tags="" position="2700,2150" size="100,100">Part 1:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/snCTp8ypL74&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 2:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/esA7e8TJLfQ&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+Part 3:
+&lt;iframe width=&quot;727&quot; height=&quot;409&quot; src=&quot;https://www.youtube.com/embed/vvnG_GEr3sQ&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</tw-passagedata></tw-storydata>
+
